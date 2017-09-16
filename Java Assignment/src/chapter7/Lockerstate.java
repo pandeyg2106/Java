@@ -1,6 +1,6 @@
 package chapter7;
 
-public class Question23 {
+public class Lockerstate {
 	public static void main(String[] args) {
 	    boolean[] lockers = new boolean[100];
 	    for (int student = 1; student <= 100; student++) {
