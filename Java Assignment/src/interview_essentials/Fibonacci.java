@@ -1,4 +1,4 @@
-package strings;
+package interview_essentials;
 
 public class Fibonacci {
 	
@@ -11,12 +11,9 @@ public class Fibonacci {
 			int sum = a + b;
 			System.out.print(sum+" ");
 			a = b;
-			b = sum;
-			
-		}
-		
-	}
-	
+			b = sum;			
+		}		
+	}	
 	public static void main(String[] args) {
 		Fibonacci fib = new Fibonacci();
 		fib.fibonacci(10);

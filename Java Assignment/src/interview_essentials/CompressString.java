@@ -1,4 +1,4 @@
-package strings;
+package interview_essentials;
 
 public class CompressString {
 	

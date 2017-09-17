@@ -1,4 +1,4 @@
-package strings;
+package interview_essentials;
 
 import java.util.HashSet;
 public class DistintElementsInArray {

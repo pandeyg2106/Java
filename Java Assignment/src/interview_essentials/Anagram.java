@@ -1,4 +1,4 @@
-package strings;
+package interview_essentials;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 public class Anagram {
 	
 	String s1 = "gaurav";
-	String s2 = "auarbg";
+	String s2 = "auarvg";
 	
 	public void isAnagram(String a, String b){
 		
@@ -48,9 +48,37 @@ public class Anagram {
 		}
 	}
 	
+	public boolean isAnagramWithoutMap(String a, String b){
+		
+		char[] chars1 = a.toCharArray();
+		char[] chars2 = b.toCharArray();
+		StringBuilder s = new StringBuilder(b);
+		
+		for(Character ch:chars1){
+			int index = s.indexOf(""+ch);
+			if(index == -1){
+				return false;
+			}
+			else{
+				s.deleteCharAt(index);
+			}			
+		}
+		if(s.length() == 0){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
 	public static void main(String[] args) {
 		Anagram obj = new Anagram();
-		obj.isAnagram(obj.s1, obj.s2);
+		if(obj.isAnagramWithoutMap(obj.s1, obj.s2)){
+			System.out.println("The strings are anagram");
+		}
+		else{
+			System.out.println("The strings are not an anagram");
+		}
 	}
 			
 
