@@ -51,7 +51,6 @@ public class Anagram {
 	public boolean isAnagramWithoutMap(String a, String b){
 		
 		char[] chars1 = a.toCharArray();
-		char[] chars2 = b.toCharArray();
 		StringBuilder s = new StringBuilder(b);
 		
 		for(Character ch:chars1){

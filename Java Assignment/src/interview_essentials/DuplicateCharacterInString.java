@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class DuplicateCharacter {
+public class DuplicateCharacterInString {
 
-	String s = "gauravpandey";
+	String s = "gaurav pandey furniturewalla";
 
 	public void findDuplicateChar(String str) {
 
@@ -33,7 +33,7 @@ public class DuplicateCharacter {
 	}
 	
 	public static void main(String[] args) {
-		DuplicateCharacter duplicatecharter = new DuplicateCharacter();
+		DuplicateCharacterInString duplicatecharter = new DuplicateCharacterInString();
 		System.out.println("In the given string: "+duplicatecharter.s+"\n");
 		duplicatecharter.findDuplicateChar(duplicatecharter.s);
 		
